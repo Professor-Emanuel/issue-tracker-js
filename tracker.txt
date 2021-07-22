@@ -1,0 +1,11 @@
+For generating unique identifiers you can use this:
+https://chancejs.com  --->  https://chancejs.com/chance.min.js
+
+For those who know how to use Bootstrap, you can also add this in index.html, before the body closing tab,
+and make use of it:
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+Icons: https://www.w3schools.com/icons/fontawesome5_icons_datetime.asp

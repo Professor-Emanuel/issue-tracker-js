@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: linear-gradient(rgb(250, 60, 190), rgb(100, 30, 250));
+  height: 100%;
+  overflow-x: hidden; /* makes the background color stretch instead of restarting after 100% visible height */
+}
+
+body {
+  width: auto;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: white;
+}
+
+.main-container,
+.column-length-12,
+.well {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 0px 10px 10px 10px;
+  color: black;
+}
+
+.main-container {
+  background: linear-gradient(rgb(12, 243, 204), rgb(9, 143, 233));
+}
+
+.column-length-12 {
+  padding: 10px;
+  background: linear-gradient(rgb(2, 48, 40), rgb(9, 188, 233));
+}
+
+.well {
+  padding: 15px;
+  background: linear-gradient(rgb(243, 12, 231), rgb(39, 247, 229));
+}
+.main-container h1 {
+  padding: 10px 0px 10px 0px;
+}
+
+.tracker-container {
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(rgb(41, 238, 106), rgb(204, 80, 241));
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  outline-width: 0;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 12px 12px 0px;
+  display: inline-block; /* inline-block allows to set a width & height and margins & paddings are respected (delete to see difference) */
+}
+
+.button {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(90, 64, 236), rgb(246, 250, 30));
+  margin: 12px 12px 0px 0px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.button-warning,
+.button-danger {
+  text-decoration: none;
+  color: white;
+}
+
+.button-warning {
+  background: linear-gradient(to right, rgb(24, 28, 226), rgb(2, 1, 31));
+}
+
+.button-danger {
+  background: linear-gradient(to right, rgb(248, 46, 46), rgb(255, 0, 0));
+}
+
+.link-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+p,
+h3 {
+  padding: 4px 0px 0px 0px;
+}
+
+.span-status {
+  background-color: rgb(7, 27, 202);
+  color: white;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}

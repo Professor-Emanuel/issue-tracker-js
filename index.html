@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tracker_app/tracker_app.css" />
+    <title>Tracker App</title>
+  </head>
+  <body onload="fetchListOfIssues()">
+    <div class="main-container">
+      <h1>Issue Tracker</h1>
+      <div class="tracker-container">
+        <h3>Add new issue!</h3>
+        <form id="issueInputForm">
+          <div class="form-group">
+            <label for="issueDescriptionInput">Description</label>
+            <input
+              type="text"
+              class="form-control"
+              id="issueDescriptionInput"
+              placeholder="Describe the encountered issue ..."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="issueSeverityInput">Severity</label>
+            <select id="issueSeverityInput" class="form-control">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="issueAssignedInput">Assigned To</label>
+            <input
+              type="text"
+              class="form-control"
+              id="issueAssignedInput"
+              placeholder="Assign task to someone ..."
+            />
+          </div>
+
+          <button type="submit" class="button primary-button">Add</button>
+        </form>
+      </div>
+
+      <div class="column-length-12">
+        <div id="issuesList"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy Prof. Emanuel</p>
+    </div>
+
+    <!--for icons (they did not work for me)-->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- dependency we need, to generate global unit identifiers, using function giud() -> see tracker.js file -->
+    <script src="tracker_app/chance.js"></script>
+    <script src="tracker_app/tracker_app.js"></script>
+  </body>
+</html>
